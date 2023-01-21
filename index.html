@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports JS QuizS</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <!-- main content -->
+    <div id="main" class="container-fluid">
+
+        <!-- top for highscore link and timer -->
+        <div class="row">
+            <a href="#" id="viewHallOfFame">See the Hall of Famers!</a>
+            <div id="timer">
+             <span id="stopClock">Time: 0</span>
+            <div id="noTime" style="display: none;">Time's Up!</div>
+        </div>
+                  <!--start screen  -->
+            <div id="quiz-box">
+                  <div id="start">
+                      <h1>Sports Quiz</h1>
+                      <p>Let's test your knowledge on Sports! Every question you get wrong will deduct your overall time to complete. Good luck on making it to the Hall of Fame!</p>
+                      <button type="button" id="applyForHof">Start</button>
+                  </div>
+                  <!--quiz div  -->
+                  <div id="entry-box" style="display: none;">
+                    <p id="questionHeader"></p>
+                        <p><button id="answer0"></button></p>
+                        <p><button id="answer1"></button></p>
+                        <p><button id="answer2"></button></p>
+                        <p><button id="answer3"></button></p>
+                        <div id="lineBreak" style="display: none"></div>
+                        <p id="answerCheck" style="display: none;"></p>
+                    </div>
+                  </div>
+                  <!-- score div -->
+					<div id="Hof-page" style="display: none;">
+                        <h2> Your final score is <span id="finalScore"></span>! </h2>
+                            <form>
+                                <p>Place your name in the Hall Of Fame:  <input id="submitHof" type="text">
+                                <button type="submit" id="submitForHofBtn">Submit</button>
+                                </p>
+                            </form>
+                        </div>
+                </div>
+                <!-- highscores section -->
+                <div id="highScore" style="display: none;">
+                    <h2>High Scores</h2>                   
+                    <div id="listOfLegends"></div>
+                    <p>
+                        <button type="submit" id="restartBtn">Back</button>
+                        <button type="submit" id="clearHofBtn">Clear Hall of Fame Icons</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/script.js"></script>
+</body>
+</html>

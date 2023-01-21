@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 5px;
+    font-size: 20px;
+    font-family: Cambria, Times, 'Times New Roman', serif;
+    line-height: 35px;
+}
+body {
+    background-color: lightblue;
+}
+
+button {
+    background-color: gold;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: orangered;
+}
